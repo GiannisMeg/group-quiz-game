@@ -4,7 +4,7 @@ const corsMiddleWare = require("cors");
 
 //routers
 
-// const countryRouter = require("./routers/country");
+const categoryRouter = require("./routers/category");
 
 //constants
 const { PORT } = require("./config/constants");
@@ -22,7 +22,7 @@ app.use(express.json());
 
 //routes
 
-app.use("/countries", countryRouter);
+app.use("/category", categoryRouter);
 
 //start listening
 app.listen(PORT, () => {
