@@ -10,9 +10,7 @@ const router = new Router();
 router.get("/", async (req, res, next) => {
 	// console.log("req.body", req.body);
 	try {
-		const allCategories = await Category.findAll({
-			include: [Question],
-		});
+		const allCategories = await Category.findAll();
 
 		if (!allCategories) {
 			res.status(404).send("no category found");
