@@ -22,7 +22,7 @@ app.use(express.json());
 
 //routes
 
-app.use("/category", categoryRouter);
+app.use("/category",categoryRouter);
 
 //start listening
 app.listen(PORT, () => {
